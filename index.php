@@ -25,7 +25,24 @@
                     echo $_SESSION['signin_errors'];
                 }
             ?>
-            <div class="row">
+            <div class="">
+                <div class="container mt-4 col-sm-12 col-md-6 col-lg-4">
+                        <h2 class="text-muted">Login</h2>
+                        <form method="POST" action="files/signin.php" class="mt-4" id="signin">
+                            <div class="form-group">
+                                <label for="signin-email">Email address</label>
+                                <input type="email" class="form-control" name="email" id="signin-email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="signin-password">Password</label>
+                                <input type="password" class="form-control" name="password" id="signin-password" placeholder="Password" required>
+                            </div>
+    
+                            <button type="submit" class="main-color text-white btn w-100">Sign up</button>
+                        </form>
+                    </div>
+                </div> <br> <br>
+
                 <div class="container col-sm-12 col-md-6 col-lg-4">
                     <h2 class="text-muted">Sign Up</h2>
                     <form method="POST" action="files/signup.php" class="mt-4" id="signup">
@@ -44,29 +61,13 @@
                             <input type="password" class="form-control" name="password" id="password" placeholder="Password" >
                         </div>
        
-                        <button type="submit" class="main-color btn text-white w-100">Submit</button>
+                        <button type="submit" class="main-color btn text-white w-100">Log in</button>
                     </form>
                 </div>
 
-                <!-- Middle Line -->
-                <div class="middle-line main-color"></div>
+                
 
-                <div class="container mt-4 col-sm-12 col-md-6 col-lg-4">
-                    <h2 class="text-muted">Login</h2>
-                    <form method="POST" action="files/signin.php" class="mt-4" id="signin">
-                        <div class="form-group">
-                            <label for="signin-email">Email address</label>
-                            <input type="email" class="form-control" name="email" id="signin-email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="signin-password">Password</label>
-                            <input type="password" class="form-control" name="password" id="signin-password" placeholder="Password" required>
-                        </div>
- 
-                        <button type="submit" class="main-color text-white btn w-100">Submit</button>
-                    </form>
-                </div>
-            </div>
+               
         </div>
 
         <script src="js/validation.js"></script>
